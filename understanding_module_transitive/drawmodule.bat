@@ -30,6 +30,8 @@ jar -c -f user.jar --main-class com.user.User -C classes .
 move user.jar ../.
 cd ..
 
+java --module-path . -m com.user
+
 rem build the the main module, that depends on the user module
 cd com.main
 rm main.jar

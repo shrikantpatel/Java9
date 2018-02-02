@@ -21,3 +21,5 @@ understanding_module_transitive/com.main/classes/com/main/MainClass.class
 understanding_module_transitive/com.user/sources.txt
 understanding_module_transitive/com.user/classes/module-info.class
 
+CompleteableFutureSample.class
+Test.class

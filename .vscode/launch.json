@@ -6,11 +6,45 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Debug (Launch)-CompleteableFutureSample",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "CompleteableFutureSample",
+            "args": "",
+            "classPaths": [
+                "${workspaceRoot}"
+            ],
+            "sourcePaths": [
+                "${workspaceRoot}"
+            ],
+            "preLaunchTask": "build"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MainClass",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "MainClass",
+            "args": "",
+            "classPaths": [
+                "${workspaceRoot}"
+            ],
+            "sourcePaths": [
+                "${workspaceRoot}"
+            ],
+            "preLaunchTask": "build"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch)-Test",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",
-            "stopOnEntry": true,
+            "stopOnEntry": false,
             "mainClass": "Test",
             "args": "",
             "classPaths": [

@@ -18,7 +18,6 @@ public class CompleteableFutureSample {
         System.out.println("T4 - " + new Date());
         try {
             System.out.println("Test - " + f.get());
-
         } catch (CancellationException ce) {
             ce.printStackTrace(); //temp only for test code.
         }
@@ -36,10 +35,8 @@ public class CompleteableFutureSample {
         // combining the functional composition style monads
         // I had similar question that also go answered by
         // https://stackoverflow.com/questions/43019126/completablefuture-thenapply-vs-thencompose
-        CompletableFuture<String> completableFuture = CompletableFuture.supplyAsync(()-> {return "";})
+        CompletableFuture<String> completableFuture = CompletableFuture.supplyAsync(()-> {return "Hello";})
                 .thenCompose(s -> CompletableFuture.supplyAsync(() -> s + " World"));
-
-        //
 
 
         System.out.println(completableFuture.get());

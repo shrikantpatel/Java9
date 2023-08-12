@@ -17,3 +17,6 @@ java.exe --list-modules
 javac --module-path %JAVA_HOME%\jmods --add-modules java.activation Test.java
 
 java --module-path C:\JAVA_INSTALLATION\jdk-9.0.1_64\jmods --add-modules java.activation Test
+
+git config user.name "hrikantpatel"
+git config user.email shrikant_patelin@yahoo.com

@@ -23,3 +23,6 @@ understanding_module_transitive/com.user/classes/module-info.class
 
 CompleteableFutureSample.class
 Test.class
+understanding_module/.DS_Store
+.gitignore
+understanding_module/com.draw/.DS_Store

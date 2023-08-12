@@ -30,3 +30,19 @@ mv user.jar ../.
 cd ..
 
 $JAVA_HOME/java --module-path . -m com.user
+
+cd com.main
+rm main.jar
+rm -rf classes
+
+mkdir classes
+
+ls -R | find -L . | grep java > sources.txt
+$JAVA_HOME/javac --module-path ../ -d classes @sources.txt
+
+$JAVA_HOME/jar -c -f main.jar --main-class com.main.MainClass -C classes .
+
+mv main.jar ../.
+cd ..
+
+$JAVA_HOME/java --module-path . -m com.main
